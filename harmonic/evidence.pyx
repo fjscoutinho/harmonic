@@ -233,22 +233,6 @@ class Evidence:
 
         """
 
-
-
-
-
-
-
-
-
-
-
-        
-
-        print("add chains function")
-
-        break
-
         if chains.nchains != self.nchains:
             raise ValueError("nchains do not match")
 
@@ -327,14 +311,12 @@ class Evidence:
                     self.lnargmin = lnarg \
                         if lnarg < self.lnargmin else self.lnargmin
                     
-                    print("pre")
-
-                    break
+                    print(self.lnargmax)
 
                     self.lnprobmax = lnprob \
                         if lnprob > self.lnprobmax else self.lnprobmax
 
-                    print("post")
+                    print(self.lnargmin)
 
                     self.lnprobmin = lnprob \
                         if lnprob < self.lnprobmin else self.lnprobmin
