@@ -305,25 +305,19 @@ class Evidence:
                     # Add contribution to running sum.
                     running_sum[i_chains] += term
 
-                    # Log diagnostic terms.
-                    self.lnargmax = lnarg \
-                        if lnarg > self.lnargmax else self.lnargmax
-                    self.lnargmin = lnarg \
-                        if lnarg < self.lnargmin else self.lnargmin
-                    
-                    print(self.lnargmax)
-
-                    self.lnprobmax = lnprob \
-                        if lnprob > self.lnprobmax else self.lnprobmax
-
-                    print(self.lnargmin)
-
-                    self.lnprobmin = lnprob \
-                        if lnprob < self.lnprobmin else self.lnprobmin
-                    self.lnpredictmax = lnpredict \
-                        if lnpredict > self.lnpredictmax else self.lnpredictmax
-                    self.lnpredictmin = lnpredict \
-                        if lnpredict < self.lnpredictmin else self.lnpredictmin
+                    # # Log diagnostic terms.
+                    # self.lnargmax = lnarg \
+                    #     if lnarg > self.lnargmax else self.lnargmax
+                    # self.lnargmin = lnarg \
+                    #     if lnarg < self.lnargmin else self.lnargmin
+                    # self.lnprobmax = lnprob \
+                    #     if lnprob > self.lnprobmax else self.lnprobmax
+                    # self.lnprobmin = lnprob \
+                    #     if lnprob < self.lnprobmin else self.lnprobmin
+                    # self.lnpredictmax = lnpredict \
+                    #    if lnpredict > self.lnpredictmax else self.lnpredictmax
+                    # self.lnpredictmin = lnpredict \
+                    #    if lnpredict < self.lnpredictmin else self.lnpredictmin
             
         self.process_run()
         self.chains_added = True
