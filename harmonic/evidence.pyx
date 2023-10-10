@@ -310,8 +310,14 @@ class Evidence:
                         if lnarg > self.lnargmax else self.lnargmax
                     self.lnargmin = lnarg \
                         if lnarg < self.lnargmin else self.lnargmin
+                    
+                    print("pre")
+
                     self.lnprobmax = lnprob \
                         if lnprob > self.lnprobmax else self.lnprobmax
+
+                    print("post")
+
                     self.lnprobmin = lnprob \
                         if lnprob < self.lnprobmin else self.lnprobmin
                     self.lnpredictmax = lnpredict \
