@@ -235,6 +235,8 @@ class Evidence:
 
         print("add chains function")
 
+        break
+
         if chains.nchains != self.nchains:
             raise ValueError("nchains do not match")
 
