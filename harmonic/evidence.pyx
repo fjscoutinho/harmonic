@@ -235,6 +235,17 @@ class Evidence:
 
         break
 
+
+
+
+
+
+
+
+
+
+        
+
         if chains.nchains != self.nchains:
             raise ValueError("nchains do not match")
 
