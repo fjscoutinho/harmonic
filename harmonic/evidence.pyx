@@ -232,20 +232,7 @@ class Evidence:
             ValueError: Raised if both max and mean shift are set.
 
         """
-
-        break
-
-
-
-
-
-
-
-
-
-
         
-
         if chains.nchains != self.nchains:
             raise ValueError("nchains do not match")
 
